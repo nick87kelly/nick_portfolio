@@ -16,21 +16,35 @@ $(window).scroll(function () {
 
 const experience = new Experience(document.querySelector(".experience-canvas"));
 
-if (!matchMedia('(pointer:fine)').matches) {
-    var opacity = 0;
-    var intervalID = 0;
-
-    window.onload = () => {
+window.onload = () => {
+    if (!matchMedia('(pointer:fine)').matches) {
+        var opacityPage = 0;
+        var intervalIDPage = 0;
         setInterval(() => {
             var page = document.getElementsByClassName("page")[0];
-            opacity = Number(window.getComputedStyle(page)
+            opacityPage = Number(window.getComputedStyle(page)
                 .getPropertyValue("opacity"));
-            if (opacity < 1) {
-                opacity = opacity + 0.1;
-                page.style.opacity = opacity
+            if (opacityPage < 1) {
+                opacityPage = opacityPage + 0.1;
+                page.style.opacity = opacityPage
             } else {
-                clearInterval(intervalID);
+                clearInterval(intervalIDPage);
             }
         }, 200)
     }
+
+    var opacityLoader = 0;
+    var intervalIDLoader = 0;
+
+    setInterval(() => {
+        var loader = document.getElementsByClassName("loader")[0];
+        opacityLoader = Number(window.getComputedStyle(loader)
+            .getPropertyValue("opacity"));
+        if (opacityLoader > 0) {
+            opacityLoader = opacityLoader - 0.1;
+            loader.style.opacity = opacityLoader
+        } else {
+            clearInterval(intervalIDLoader);
+        }
+    }, 100)
 }
