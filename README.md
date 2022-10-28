@@ -1,4 +1,4 @@
 # nick_portfolio
 
 - Personal Portfolio
-- Inspired Idea by boko33. Tutorial followed by Andrew Woan (https://www.youtube.com/c/AndrewWoan)
+- Inspired Idea: https://bokoko33.me/. Followed Tutorial by Andrew Woan (https://www.youtube.com/c/AndrewWoan).
