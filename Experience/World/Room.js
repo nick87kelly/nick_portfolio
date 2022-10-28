@@ -74,10 +74,25 @@ export default class Room {
     }
 
     onMouseMove() {
+        var opacity = 0;
+        var intervalID = 0;
+
         window.addEventListener("mousemove", (e) => {
             //console.log(e);
             this.rotation = ((e.clientX - window.innerWidth / 2) * 2) / window.innerWidth;
             this.lerp.target = this.rotation * .1;
+
+            setInterval(() => {
+                var page = document.getElementsByClassName("page")[0];
+                opacity = Number(window.getComputedStyle(page)
+                    .getPropertyValue("opacity"));
+                if (opacity < 1) {
+                    opacity = opacity + 0.1;
+                    page.style.opacity = opacity
+                } else {
+                    clearInterval(intervalID);
+                }
+            }, 200)
         });
     }
 
