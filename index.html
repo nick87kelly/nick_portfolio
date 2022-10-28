@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nick's Portfolio</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="experience">
+    <canvas class="experience-canvas"></canvas>
+  </div>
+
+  <div class="div">Inspired Idea by boko33. Tutorial followed by Andrew Woan (https://www.youtube.com/c/AndrewWoan)
+  </div>
+
+  <div class="page">
+    <div class="page-wrapper">
+      <section class="hero">
+        <div class="hero-wrapper">
+          <div class="hero-main">
+            <h1 class="hero-main-title">Nick Kelly</h1>
+            <p class="hero-main-description">Computer Science Student | 3D Artist</p>
+          </div>
+
+          <div class="hero-second">
+            <p class="hero-second-subheading"><b>My</b></h1>
+            <p class="hero-second-subheading"><b>Portfolio</b></p>
+          </div>
+        </div>
+
+        <!-- Original Author for Mouse-Scroll Animation CSS --------------------- Yurij Rightblog.ru -->
+        <div class="mouse-scroll">
+
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <div>
+            <span class="m_scroll_arrows one"></span>
+            <span class="m_scroll_arrows two"></span>
+            <span class="m_scroll_arrows three"></span>
+          </div>
+          <!-- ------------------------------------------------------------------------------------- -->
+
+        </div>
+      </section>
+
+      <div class="first-move section-margin"></div>
+
+      <section class="first-section section right">
+        <div class="section-intro-wrapper">
+          <video class="video-animation" autoplay muted loop>
+            <source src="/videos/aboutme.webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="section-detail-wrapper">
+          <h3 class="section-heading">Interests</h3>
+          <p class="section-text">I'm faciscinated by all things Computer Science, namely the creative freedom it allows
+            for. This is where my true passion lies. It's no secret that Computer Science is very analytical in nature
+            (overboard at times),
+            but I find that balance between logical reasoning and creative expression to be very rewarding. Whether is
+            be 3D
+            digital art, web design, or game
+            development, programming paired with a creative outlet is what truly interests me.</p>
+          <p class="section-text">Very unrelated, but fish-keeping is another interest of mine and I would be remiss
+            if not to acknowledge my two wonderful goldfish.</p>
+
+          <h3 class="section-heading">Education</h3>
+          <p class="section-text">I'm currently a third year Computer Science Student at Arizona State University. I'm
+            working toward a Bachelor's Degree as well as a Game Development Certificate.</p>
+          <h3 class="section-heading">Experience</h3>
+          <p class="section-text">I have experience programming in multiple languages (C, C++, C#, Java, Python,
+            JavaScript) and have used each to create a variety of back-end/front-end projects (Including this very
+            portfolio!). Lastly, I've worked closely with Blender and GameMaker to generate my 3D art assets and video
+            games respectively.</p>
+          <p class="section-text">Professionally, I have experience
+            working with
+            cloud applications and web design in a production setting. Furthermore, I've worked in many different
+            engineering environments, learning many unique disciplines ranging from manufacturing software to IoT
+            solutions.</p><br><br>
+          <p class="section-text">See attached Resume for more in depth detail on my professional and educational
+            experience.</p>
+          <p class="resume-heading section-text">Resume</p>
+          <a class="section-text" href="/files/resume.pdf" target="_blank">Nick Kelly Resume</a>
+        </div>
+      </section>
+
+      <div class="second-move section-margin"></div>
+
+      <section class="second-section section right">
+        <div class="section-intro-wrapper">
+          <video class="video-animation" width="320" height="240" autoplay muted loop>
+            <source src="/videos/mywork.webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="section-detail-wrapper">
+          <p class="section-text">My proudest works, whether they be the result of school, work, or just pure boredom,
+            feature a variety of Computer Science practices, including 3D
+            art,
+            web design, and game development.</p>
+          <h3 class="section-heading">3D ART</h3>
+          <div class="img-section">
+            <div class="img-holder">
+              <img src="/images/1.jpg" class="img">
+              <label class="img-label"><b><i>Broken Down</i></b></label>
+            </div>
+            <div class="img-holder">
+              <img src="/images/2.jpg" class="img">
+              <label class="img-label"><b><i>Tea Potty</i></b></label>
+            </div>
+            <div class="img-holder">
+              <img src="/images/3.jpg" class="img">
+              <label class="img-label"><b><i>David, David, and David</i></b></label>
+            </div>
+            <div class="img-holder">
+              <img src="/images/7.jpg" class="img">
+              <label class="img-label"><b><i>Escher's Chessboard</i></b></label>
+            </div>
+            <div class="img-holder">
+              <img src="/images/5.jpg" class="img">
+              <label class="img-label"><b><i>The Black Sheep</i></b></label>
+            </div>
+            <div class="img-holder">
+              <img src="/images/6.jpg" class="img">
+              <label class="img-label"><b><i>The Armchair</i></b></label>
+            </div>
+            <div class="img-holder">
+              <img src="/images/4.jpg" class="img">
+              <label class="img-label"><b><i>Aim for the Stars</i></b></label>
+            </div>
+          </div>
+          <h3 class="section-heading">Games</h3>
+          <div class="game-section">
+            <div class="game-holder">
+              <div class="video-mask">
+                <video class="vid" width="320" height="240" autoplay muted loop>
+                  <source src="/videos/wordle-clone.webm">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <label class="vid-label"><b><i>Wordle Clone</i></b></label>
+            </div>
+            <div class="img-holder">
+              <div class="overlay-holder">
+                <img src="/images/8.jpg" class="img main-img">
+                <div class="overlay-img">
+                  <p class="unreleased-img">
+                    In Progress...
+                  </p>
+                </div>
+              </div>
+              <label class="img-label"><b><i>Dead Man's Sea</i></b></label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="third-move section-margin"></div>
+
+      <section class="third-section section right">
+        <div class="section-intro-wrapper">
+          <video class="video-animation" width="320" height="240" autoplay muted loop>
+            <source src="/videos/contact.webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="section-detail-wrapper">
+          <h3 class="section-heading">Contact Info</h3>
+          <p class="contact-heading">Email</p>
+          <p class="section-text"> - <a href="mailto:nbkelly2@asu.edu">
+              <email>nbkelly2@asu.edu</email>
+            </a></p><br>
+          <p class="section-text"> - <a href="mailto:nick87kelly@gmail.com">
+              <email>nick87kelly@gmail.com</email>
+            </a></p><br>
+          <p class="contact-heading">Phone (...if it's charged)</p>
+          <p class="section-text"> - <a href="tel:480-861-7622">
+              <phone>480-861-7622</phone>
+            </a></p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

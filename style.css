@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: var(--text-black);
+  overflow: overlay;
+  font-family: Garamond, serif;
+}
+
+:root {
+  --text-black: #333332;
+  --primary-color: #FAF4E5;
+  --primary-green: #C1E1C1;
+  --secondary-green: #6b996b;
+}
+
+.experience {
+  position: fixed;
+  width: 100vw;
+  height: 100vh
+}
+
+.experience-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.page-wrapper {
+  position: relative;
+}
+
+.section-margin {
+  height: 3000px;
+  width: 100%;
+}
+
+.section {
+  width: 50%;
+  padding: 100px 4%;
+  margin: 0;
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+.right {
+  margin-left: auto;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.section-intro-wrapper {
+  position: relative;
+  padding: 20% 5%;
+  text-align: center;
+  border-bottom: 2px solid var(--primary-green);
+}
+
+.video-animation {
+  width: 100%;
+  height: 100%;
+}
+
+.section-detail-wrapper {
+  position: relative;
+  padding: 20% 5%;
+}
+
+.section-heading {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.8;
+  margin-top: 64px;
+  text-align: center;
+  text-shadow: 2px 2px 2px;
+}
+
+.img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px;
+}
+
+.img-label,
+.vid-label {
+  font-size: 20px;
+}
+
+.img-holder,
+.game-holder {
+  transition: .2s;
+  margin: 60px 0 0 0;
+  text-align: center;
+}
+
+.img-holder:hover,
+.game-holder:hover {
+  transform: scale(1.2);
+}
+
+.overlay-holder {
+  position: relative;
+}
+
+.main-img {
+  display: block;
+  width: 100%;
+}
+
+.overlay-img {
+  position: absolute;
+  font-size: 48px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-radius: 12px;
+  transition: opacity 0.25s;
+}
+
+.overlay-img:hover {
+  opacity: 1;
+}
+
+.unreleased-img {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+
+.vid {
+  width: 100%;
+  height: auto;
+}
+
+.video-mask {
+  height: 100%;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px;
+}
+
+.section-text {
+  line-height: 2;
+  margin-top: 18px;
+  font-size: 20px;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero-wrapper {
+  position: relative;
+  height: 86%;
+  width: calc(100%-160px);
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.hero-main {
+  position: absolute;
+  top: 10%;
+  left: 90px;
+}
+
+.hero-second {
+  position: absolute;
+  bottom: 60px;
+  right: 180px;
+}
+
+.hero-main-title {
+  font-size: 64px;
+}
+
+.hero-main-description {
+  font-size: 18px;
+}
+
+.hero-second-subheading {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.contact-heading,
+.resume-heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.8;
+  margin-top: 64px;
+  text-shadow: 1px 1px 1px;
+}
+
+/* Original Author for Mouse-Scroll Animation CSS --------------------- Yurij Rightblog.ru*/
+
+.mouse-scroll {
+  display: block;
+  margin: 0 auto;
+  width: 24px;
+  height: 14%;
+}
+
+
+.m_scroll_arrows {
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+  border-right: 2px solid var(--secondary-green);
+  border-bottom: 2px solid var(--secondary-green);
+  margin: 0 0 3px 4px;
+
+  width: 16px;
+  height: 16px;
+}
+
+
+.one {
+  margin-top: 1px;
+}
+
+.one,
+.two,
+.three {
+  -webkit-animation: mouse-scroll 1s infinite;
+  -moz-animation: mouse-scroll 1s infinite;
+  animation: mouse-scroll 1s infinite;
+
+}
+
+.one {
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.two {
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+
+  animation-delay: .2s;
+  animation-direction: alternate;
+
+  margin-top: -6px;
+}
+
+.three {
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+
+  animation-delay: .3s;
+  animation-direction: alternate;
+
+
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid var(--secondary-green);
+  top: 170px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: white;
+  position: relative;
+
+  height: 4px;
+  width: 4px;
+  border: 2px solid var(--secondary-green);
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+@-moz-keyframes mouse-wheel {
+  0% {
+    top: 1px;
+  }
+
+  25% {
+    top: 2px;
+  }
+
+  50% {
+    top: 3px;
+  }
+
+  75% {
+    top: 2px;
+  }
+
+  100% {
+    top: 1px;
+  }
+}
+
+@-o-keyframes mouse-wheel {
+
+  0% {
+    top: 1px;
+  }
+
+  25% {
+    top: 2px;
+  }
+
+  50% {
+    top: 3px;
+  }
+
+  75% {
+    top: 2px;
+  }
+
+  100% {
+    top: 1px;
+  }
+}
+
+@keyframes mouse-wheel {
+
+  0% {
+    top: 1px;
+  }
+
+  25% {
+    top: 2px;
+  }
+
+  50% {
+    top: 3px;
+  }
+
+  75% {
+    top: 2px;
+  }
+
+  100% {
+    top: 1px;
+  }
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes mouse-scroll {
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes mouse-scroll {
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mouse-scroll {
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------------------------------------*/
+
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-green);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: .5;
+}
+
+@media (max-width: 968px) {
+  .section {
+    width: 100%;
+  }
+
+  .hero-wrapper {
+    height: 100%;
+  }
+
+  .hero-second {
+    position: absolute;
+    bottom: 35%;
+    right: 5px;
+  }
+
+  .hero-main {
+    position: absolute;
+    top: 15%;
+    left: 5px;
+  }
+
+  .mouse-scroll {
+    visibility: hidden;
+  }
+}
