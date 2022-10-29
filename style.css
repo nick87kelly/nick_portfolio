@@ -30,37 +30,26 @@ body {
 }
 
 .loader {
-  background-color: #bce6ff;
-  border-radius: 50%;
-  width: 6vh;
-  height: 6vh;
-  top: 50%;
-  left: calc(50% - 3vh);
   position: absolute;
-  animation: spin 2s linear infinite;
+  top: calc(50% - 15vh);
+  left: calc(50% - 25vh);
+  width: 50vh;
+  height: 30vh;
+  border-radius: 100%;
+  animation: swim 3s linear infinite;
 }
 
-.fish1 {
-  background-color: #FFB480;
-  border-radius: 50%;
-  width: 1vh;
-  height: 1.5vh;
-  top: 35%;
-  left: 10%;
-  position: absolute;
+@-webkit-keyframes swim {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
-.fish2 {
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  width: .5vh;
-  height: .75vh;
-  top: 42%;
-  left: 80%;
-  position: absolute;
-}
-
-@keyframes spin {
+@keyframes swim {
   0% {
     transform: rotate(0deg);
   }
@@ -68,6 +57,43 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+@-webkit-keyframes counter-spin {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes counter-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.fish-img {
+  position: absolute;
+  top: 30%;
+  left: 1%;
+  height: 15vh;
+  width: 7vh;
+}
+
+.me-img {
+  position: absolute;
+  height: 30vh;
+  width: 27vh;
+  left: calc(50% - 13.5vh);
+  top: calc(50% - 15vh);
+  animation: counter-spin 3s linear infinite;
 }
 
 .page {
