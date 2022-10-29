@@ -34,8 +34,8 @@ body {
   border-radius: 50%;
   width: 6vw;
   height: 6vw;
-  top: calc(50vh - 5vh);
-  left: calc(50vw - 5vh);
+  top: calc(50vh - 3vh);
+  left: calc(50vw - 3vh);
   position: absolute;
   animation: spin 2s linear infinite;
 }
