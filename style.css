@@ -9,6 +9,7 @@ body {
   color: var(--text-black);
   overflow: overlay;
   font-family: Garamond, serif;
+  overflow-anchor: none;
 }
 
 :root {
@@ -21,7 +22,7 @@ body {
 .experience {
   position: fixed;
   width: 100vw;
-  height: 100vh
+  height: 100vh;
 }
 
 .experience-canvas {
