@@ -31,7 +31,7 @@ body {
 }
 
 .loader {
-  position: absolute;
+  position: fixed;
   top: calc(50% - 15vh);
   left: calc(50% - 25vh);
   width: 50vh;
