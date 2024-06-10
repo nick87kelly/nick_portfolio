@@ -166,14 +166,16 @@ body {
 }
 
 .img-holder,
-.game-holder {
+.game-holder,
+.web-holder {
   transition: .2s;
   margin: 60px 0 0 0;
   text-align: center;
 }
 
 .img-holder:hover,
-.game-holder:hover {
+.game-holder:hover,
+.web-holder:hover {
   transform: scale(1.2);
 }
 
