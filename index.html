@@ -58,152 +58,252 @@
       <div class="first-move section-margin"></div>
 
       <section class="first-section section right">
-        <div class="section-intro-wrapper">
-          <video class="video-animation" playsinline autoplay muted loop>
-            <source src="/videos/aboutme.webm">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
-        <div class="section-detail-wrapper">
-          <h3 class="section-heading">Interests</h3>
-          <p class="section-text">I'm faciscinated by all things Computer Science, namely the creative freedom it allows
-            for. This is where my true passion lies. It's no secret that Computer Science is very analytical,
-            but I find that balance between logical reasoning and creative expression to be very rewarding. Whether is
-            be web development, 3D
-            digital art, or game
-            development, programming paired with a creative outlet is what truly interests me.</p>
-          <p class="section-text">Very unrelated, but fish-keeping is another interest of mine and I would be remiss
-            if not to acknowledge my two wonderful goldfish.</p>
-
-          <h3 class="section-heading">Education</h3>
-          <p class="section-text">I recently graduated from Arizona State University with a B.S. in Computer Science. I
-            also earned a Game Development Certificate from the same institution.</p>
-          <h3 class="section-heading">Experience</h3>
-          <p class="section-text">I have experience programming in multiple languages (C, C++, C#, Java, Python,
-            JavaScript) and have used each to create a variety of back-end/front-end projects (Including this very
-            portfolio!). Lastly, I've worked closely with Blender, Photoshop, Unity, Unreal, and GameMaker to generate my 3D art assets and
-            video
-            games respectively.</p>
-          <p class="section-text">Professionally, I have experience
-            working with
-            cloud applications and web design in a production setting. Furthermore, I've worked in many different
-            engineering environments, learning many unique disciplines ranging from manufacturing software to IoT
-            solutions.</p><br><br>
-          <p class="section-text">See attached Resume for more in depth detail on my professional and educational
-            experience.</p>
-          <p class="resume-heading section-text">Resume</p>
-          <a class="section-text" href="/files/NickResume2024.pdf" target="_blank">Nick Kelly Resume</a>
+        <svg id="side-svg" viewBox="0 0 250 700" preserveAspectRatio="none">
+          <defs>
+            <pattern id="pattern-image" patternUnits="userSpaceOnUse" width="250" height="700" >
+                <image href="/images/metal-bg.png" x="0" y="0" width="250" height="700" preserveAspectRatio="none"/>
+            </pattern>
+            <linearGradient id="box-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:rgb(73, 73, 73);stop-opacity:1" />
+              <stop offset="10%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+              <stop offset="90%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(73, 73, 73);stop-opacity:1" />
+          </linearGradient>
+          
+        </defs>
+          <polyline
+          id="background-image"
+              stroke="black"
+              points="15,15 235,15 235,685 15,685 15,15"
+            />
+            <!-- <ellipse
+              fill="white"
+              stroke="black"
+              cx="125"
+              cy="350"
+              rx="120"
+              ry="250"
+            /> -->
+          <polyline
+            fill="url(#box-gradient)"
+            stroke="#66ff00"
+            points="0,10 30,0 80,0 100,20 150,20 170,0 220,0 250,10 250,300 230,320 230,370 250,390 250,670 220,700 100,700 0,650 0,540 40,500 40,150 0,110 0,10"
+          />
+        </svg>
+        <div id="first-section-info" class="section-info">
+          <div class="section-intro-wrapper">
+            <video class="video-animation" playsinline autoplay muted loop>
+              <source src="/videos/aboutme.webm">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
+          <div class="section-detail-wrapper">
+            <h3 class="section-heading">Interests</h3>
+            <p class="section-text">I'm faciscinated by all things Computer Science, namely the creative freedom it allows
+              for. This is where my true passion lies. I find that balance between logical reasoning and creative expression to be very rewarding. Whether is
+              be web development, 3D
+              digital art, or game
+              development, programming paired with a creative outlet is what truly interests me.</p>
+            <p class="section-text">Very unrelated, but fish-keeping is another interest of mine and I would be remiss
+              if not to acknowledge my two wonderful goldfish.</p>
+  
+            <h3 class="section-heading">Education</h3>
+            <p class="section-text">I recently graduated from Arizona State University with a B.S. in Computer Science. I
+              also earned a Game Development Certificate from the same institution.</p>
+            <h3 class="section-heading">Experience</h3>
+            <p class="section-text">I have experience programming in multiple languages (C, C++, C#, Java, Python,
+              JavaScript) and have used each to create a variety of back-end/front-end projects (Including this very
+              portfolio!). Lastly, I've worked closely with Blender, Photoshop, Unity, Unreal, and GameMaker to generate my 3D art assets and
+              video
+              games respectively.</p>
+            <p class="section-text">Professionally, I have experience
+              working with
+              cloud applications and web design in a production setting. Furthermore, I've worked in many different
+              engineering environments, learning many unique disciplines ranging from manufacturing software to IoT
+              solutions.</p><br><br>
+            <p class="section-text">See attached Resume for more in depth detail on my professional and educational
+              experience.</p>
+            <p class="resume-heading section-text">Resume</p>
+            <a class="section-text" href="/files/NickResume2024.pdf" target="_blank">Nick Kelly Resume</a>
+          </div>
         </div>
       </section>
 
       <div class="second-move section-margin"></div>
 
       <section class="second-section section right">
-        <div class="section-intro-wrapper">
-          <video class="video-animation" width="320" height="240" playsinline autoplay muted loop>
-            <source src="/videos/mywork.webm">
-            Your browser does not support the video tag.
-          </video>
-        </div>
+        <svg id="side-svg" viewBox="0 0 250 1390" preserveAspectRatio="none">
+          <defs>
+            <pattern id="pattern-image2" patternUnits="userSpaceOnUse" width="250" height="1390" >
+                <image href="/images/metal-bg2.png" x="0" y="0" width="250" height="1390" preserveAspectRatio="none"/>
+            </pattern>
+            <linearGradient id="box-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:rgb(73, 73, 73);stop-opacity:1" />
+              <stop offset="10%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+              <stop offset="90%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(73, 73, 73);stop-opacity:1" />
+          </linearGradient>
+          
+        </defs>
+          <polyline
+          id="background-image2"
+              stroke="black"
+              points="15,15 235,15 235,1385 15,1385 15,15"
+            />
+            <!-- <ellipse
+              fill="white"
+              stroke="black"
+              cx="125"
+              cy="350"
+              rx="120"
+              ry="250"
+            /> -->
+          <polyline
+            fill="url(#box-gradient)"
+            stroke="#66ff00"
+            points="0,30 30,0 210,0 215,10 230,10 250,30 250,300 230,310 230,600 220,610 220,1000 250,1030 250,1350 230,1370 180,1370 160,1390 80,1390 40,1350 30,1350 10,1330 10,700 30,670 30,650 10,630 10,400 40,360 40,200 0,160 0,30"
+          />
+        </svg>
+        <div id="second-section-info" class="section-info">
+          <div class="section-intro-wrapper">
+            <video class="video-animation" width="320" height="240" playsinline autoplay muted loop>
+              <source src="/videos/mywork.webm">
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
-        <div class="section-detail-wrapper">
-          <p class="section-text">My proudest works, whether they be the result of school, work, or just pure boredom,
-            feature a variety of Computer Science practices, including web design, 3D
-            art, and game development.</p>
-            <h3 class="section-heading">WEB DESIGN</h3>
-            <a href="https://nick87kelly.github.io/leo-website/" target="_blank">
-              <div class="web-holder">
-                <div class="video-mask">
-                  <video class="vid" width="320" height="240" playsinline autoplay muted loop>
-                    <source src="/videos/leo-website.webm">
-                    Your browser does not support the video tag.
-                  </video>
+          <div class="section-detail-wrapper">
+            <p class="section-text">My proudest works, whether they be the result of school, work, or just pure boredom,
+              feature a variety of Computer Science practices, including web design, 3D
+              art, and game development.</p>
+              <h3 class="section-heading">WEB DESIGN</h3>
+              <a href="https://nick87kelly.github.io/leo-website/" target="_blank">
+                <div class="web-holder">
+                  <div class="video-mask">
+                    <video class="vid" width="320" height="240" playsinline autoplay muted loop>
+                      <source src="/videos/leo-website.webm">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <label class="vid-label"><b><i>Website I designed and developed for music videographer, Leonardo Giron.</i></b></label>
                 </div>
-                <label class="vid-label"><b><i>Website I designed and developed for music videographer, Leonardo Giron.</i></b></label>
+              </a>
+              <br><br><br><i><b>CONTENT WARNING:</b> Music videos contain explicit language and subject matter.<i></i>
+            <h3 class="section-heading">3D ART</h3>
+            <div class="img-section">
+              <div class="img-holder">
+                <img src="/images/1.jpg" class="img">
+                <label class="img-label"><b><i>Broken Down</i></b></label>
               </div>
-            </a>
-            <br><br><br><i><b>CONTENT WARNING:</b> Music videos contain explicit language and subject matter.<i></i>
-          <h3 class="section-heading">3D ART</h3>
-          <div class="img-section">
-            <div class="img-holder">
-              <img src="/images/1.jpg" class="img">
-              <label class="img-label"><b><i>Broken Down</i></b></label>
-            </div>
-            <div class="img-holder">
-              <img src="/images/2.jpg" class="img">
-              <label class="img-label"><b><i>Tea Potty</i></b></label>
-            </div>
-            <div class="img-holder">
-              <img src="/images/3.jpg" class="img">
-              <label class="img-label"><b><i>David, David, and David</i></b></label>
-            </div>
-            <div class="img-holder">
-              <img src="/images/7.jpg" class="img">
-              <label class="img-label"><b><i>Escher's Chessboard</i></b></label>
-            </div>
-            <div class="img-holder">
-              <img src="/images/5.jpg" class="img">
-              <label class="img-label"><b><i>The Black Sheep</i></b></label>
-            </div>
-            <div class="img-holder">
-              <img src="/images/6.jpg" class="img">
-              <label class="img-label"><b><i>The Armchair</i></b></label>
-            </div>
-            <div class="img-holder">
-              <img src="/images/4.jpg" class="img">
-              <label class="img-label"><b><i>Aim for the Stars</i></b></label>
-            </div>
-          </div>
-          <h3 class="section-heading">Games</h3>
-          <div class="game-section">
-            <div class="game-holder">
-              <div class="video-mask">
-                <video class="vid" width="320" height="240" playsinline autoplay muted loop>
-                  <source src="/videos/feywild_demo.webm">
-                  Your browser does not support the video tag.
-                </video>
+              <div class="img-holder">
+                <img src="/images/2.jpg" class="img">
+                <label class="img-label"><b><i>Tea Potty</i></b></label>
               </div>
-              <label class="vid-label"><b><i>The Feywild</i></b></label>
+              <div class="img-holder">
+                <img src="/images/3.jpg" class="img">
+                <label class="img-label"><b><i>David, David, and David</i></b></label>
+              </div>
+              <div class="img-holder">
+                <img src="/images/7.jpg" class="img">
+                <label class="img-label"><b><i>Escher's Chessboard</i></b></label>
+              </div>
+              <div class="img-holder">
+                <img src="/images/5.jpg" class="img">
+                <label class="img-label"><b><i>The Black Sheep</i></b></label>
+              </div>
+              <div class="img-holder">
+                <img src="/images/6.jpg" class="img">
+                <label class="img-label"><b><i>The Armchair</i></b></label>
+              </div>
+              <div class="img-holder">
+                <img src="/images/4.jpg" class="img">
+                <label class="img-label"><b><i>Aim for the Stars</i></b></label>
+              </div>
             </div>
-            <a href="https://nick87kelly.itch.io/beyond-conciousness" target="_blank">
+            <h3 class="section-heading">Games</h3>
+            <div class="game-section">
               <div class="game-holder">
                 <div class="video-mask">
                   <video class="vid" width="320" height="240" playsinline autoplay muted loop>
-                    <source src="/videos/beyond_consciousness_demo.webm">
+                    <source src="/videos/feywild_demo.webm">
                     Your browser does not support the video tag.
                   </video>
                 </div>
-                <label class="vid-label"><b><i>Beyond Consciousness</i></b></label>
+                <label class="vid-label"><b><i>The Feywild</i></b></label>
               </div>
-            </a>
-            <a href="https://nick87kelly.itch.io/dead-mans-sea" target="_blank">
+              <a href="https://nick87kelly.itch.io/beyond-conciousness" target="_blank">
+                <div class="game-holder">
+                  <div class="video-mask">
+                    <video class="vid" width="320" height="240" playsinline autoplay muted loop>
+                      <source src="/videos/beyond_consciousness_demo.webm">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <label class="vid-label"><b><i>Beyond Consciousness</i></b></label>
+                </div>
+              </a>
+              <a href="https://nick87kelly.itch.io/dead-mans-sea" target="_blank">
+                <div class="game-holder">
+                  <div class="video-mask">
+                    <video class="vid" width="320" height="240" playsinline autoplay muted loop>
+                      <source src="/videos/dead-mans-sea.webm">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <label class="vid-label"><b><i>Dead Man's Sea</i></b></label>
+                </div>
+              </a>
               <div class="game-holder">
                 <div class="video-mask">
                   <video class="vid" width="320" height="240" playsinline autoplay muted loop>
-                    <source src="/videos/dead-mans-sea.webm">
+                    <source src="/videos/wordle-clone.webm">
                     Your browser does not support the video tag.
                   </video>
                 </div>
-                <label class="vid-label"><b><i>Dead Man's Sea</i></b></label>
+                <label class="vid-label"><b><i>Wordle Clone</i></b></label>
               </div>
-            </a>
-            <div class="game-holder">
-              <div class="video-mask">
-                <video class="vid" width="320" height="240" playsinline autoplay muted loop>
-                  <source src="/videos/wordle-clone.webm">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <label class="vid-label"><b><i>Wordle Clone</i></b></label>
             </div>
           </div>
-        </div>
+      </div>
       </section>
 
       <div class="third-move section-margin"></div>
 
       <section class="third-section section right">
+        <svg id="side-svg" viewBox="0 0 250 350" preserveAspectRatio="none">
+          <defs>
+            <pattern id="pattern-image3" patternUnits="userSpaceOnUse" width="250" height="350" >
+                <image href="/images/metal-bg3.png" x="0" y="0" width="250" height="350" preserveAspectRatio="none"/>
+            </pattern>
+            <linearGradient id="box-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:rgb(73, 73, 73);stop-opacity:1" />
+              <stop offset="10%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+              <stop offset="90%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(73, 73, 73);stop-opacity:1" />
+          </linearGradient>
+          
+        </defs>
+          <polyline
+          id="background-image3"
+              stroke="black"
+              points="15,15 235,15 235,685 15,685 15,15"
+            />
+            <!-- <ellipse
+              fill="white"
+              stroke="black"
+              cx="125"
+              cy="350"
+              rx="120"
+              ry="250"
+            /> -->
+          <polyline
+            fill="url(#box-gradient)"
+            stroke="#66ff00"
+            points="0,15 15,0 85,0 95,20 230,20 250,40 250,175 240,185 240,300 170,350 25,350 0,335 0,300 30,270 30,100 0,70 0,15"
+          />
+        </svg>
+        <div id="third-section-info" class="section-info">
         <div class="section-intro-wrapper">
           <video class="video-animation" width="320" height="240" playsinline autoplay muted loop>
             <source src="/videos/contact.webm">
@@ -214,18 +314,34 @@
         <div class="section-detail-wrapper">
           <h3 class="section-heading">Contact Info</h3>
           <p class="contact-heading">Email(s)</p>
-          <p class="section-text"> - <a href="mailto:nbkelly2@asu.edu">
-              <email>nbkelly2@asu.edu</email>
-            </a></p><br>
           <p class="section-text"> - <a href="mailto:nick87kelly@gmail.com">
               <email>nick87kelly@gmail.com</email>
             </a></p><br>
+          <p class="section-text"> - <a href="mailto:nbkelly2@asu.edu">
+              <email>nbkelly2@asu.edu</email>
+            </a></p><br>
         </div>
+      </div>
       </section>
 
     </div>
   </div>
   <script type="module" src="/main.js"></script>
+  <script>
+    // JavaScript to adjust parent size
+    const parents = ["first-section", "second-section", "third-section"]
+    
+    for (p of parents){
+      let parent = document.querySelector(`.${p}`)
+      let child = document.querySelector(`#${p}-info`)
+      let resizeObserver = new ResizeObserver(() => {
+        let childRect = child.getBoundingClientRect();
+        parent.style.height = `calc(${childRect.height}px + 200px)`;
+      });
+
+      resizeObserver.observe(child);
+    }
+</script>
 </body>
 
 </html>

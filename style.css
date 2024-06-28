@@ -4,16 +4,23 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family:'digital-clock-font';
+  src: url('/fonts/digital-7.ttf');
+}
+
 html,
 body {
-  color: var(--text-black);
+  /* color: var(--text-black); */
+  color: var(--text-white);
   overflow: overlay;
-  font-family: Garamond, serif;
+  font-family:'digital-clock-font';
   overflow-anchor: none;
 }
 
 :root {
   --text-black: #333332;
+  --text-white: #FFFFFF;
   --primary-color: #FAF4E5;
   --primary-green: #C1E1C1;
   --secondary-green: #6b996b;
@@ -116,10 +123,16 @@ body {
 
 .section {
   width: 50%;
-  padding: 100px 4%;
+  /* padding: 100px 4%; */
   margin: 0;
-  background-color: var(--primary-color);
   text-align: center;
+  position: relative;
+}
+
+.section-info{
+  position:absolute; 
+  top:0; 
+  margin:100px 20% 0 20%;
 }
 
 .right {
@@ -245,6 +258,7 @@ body {
   width: calc(100%-160px);
   margin: 0 auto;
   max-width: 1100px;
+  animation: blinking 1s linear infinite;
 }
 
 .hero-main {
@@ -328,6 +342,23 @@ body {
 
   animation-direction: alternate;
   animation-delay: alternate;
+}
+
+svg{
+  height:100%;
+  width:100%;
+}
+
+#background-image {
+  fill: url(#pattern-image);
+}
+
+#background-image2 {
+  fill: url(#pattern-image2);
+}
+
+#background-image3 {
+  fill: url(#pattern-image3);
 }
 
 .two {
@@ -524,6 +555,15 @@ body {
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes blinking{
+  0%,55%{
+    opacity:1;
+  }
+  80%,100%{
+    opacity:0;
   }
 }
 
