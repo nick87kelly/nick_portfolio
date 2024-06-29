@@ -567,6 +567,33 @@ svg{
   }
 }
 
+@-moz-keyframes blinking{
+  0%,55%{
+    opacity:1;
+  }
+  80%,100%{
+    opacity:0;
+  }
+}
+
+@-o-keyframes blinking{
+  0%,55%{
+    opacity:1;
+  }
+  80%,100%{
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes blinking{
+  0%,55%{
+    opacity:1;
+  }
+  80%,100%{
+    opacity:0;
+  }
+}
+
 /* ----------------------------------------------------------------*/
 
 
